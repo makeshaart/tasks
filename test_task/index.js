@@ -8,30 +8,30 @@
 
     // create new array with forEach
 
-    let nar=[];
+    let nar1=[];
     arr.forEach((value, index) =>
-    {nar[index] = arr[index]* 2})
-    console.log(nar);
+    {nar1[index] = arr[index]* 2})
+    console.log(nar1);
 
 
     // create new array with for
 
-    let nar=[];
-    for(i=0; i<arr.length; i++){
-        nar[i]=arr[i]*2;        
+    let nar2=[];
+    for(let i=0; i<arr.length; i++){
+        nar2[i]=arr[i]*2;        
    }
-    console.log(nar);
+    console.log(nar2);
 
 
     // create new array with for...of
 
-    let nar=[];
+    let nar3=[];
     let i=0;
     for (let number of arr) {
-        nar[i]=number*2;
+        nar3[i]=number*2;
         i++;
     }
-    console.log(nar);
+    console.log(nar3);
 
     //PRIME TASKS
 
@@ -49,12 +49,12 @@ for (let i = 2; i <= n; i++) {
 }
 console.log(primes);
 
-let n = prompt("Type number here", "");
-for (let i = 2; i <= n; i++) {
-    if ((n % i == 0) && (n != i)) {
+let n2 = prompt("Type number here", "");
+for (let i = 2; i <= n2; i++) {
+    if ((n2 % i == 0) && (n2 != i)) {
         break;
     } else {
-        console.log(n,'it`s a prime num')
+        console.log(n2,'it`s a prime num')
         break;
     }
 }
@@ -69,16 +69,16 @@ for (let i = 2; i <= n; i++) {
 
 
 
-let number = prompt("Type number here", "");
+let number2 = prompt("Type number here", "");
 const seive = [];
-const primes = [];
-for( let i=2; i<number; i++){
+const primes2 = [];
+for( let i=2; i<number2; i++){
     if(!seive[i]){
-        primes.push(i);
-        for(let j = i*i; j<number; j+=i){
+        primes2.push(i);
+        for(let j = i*i; j<number2; j+=i){
             seive[j]=true;
         }
     }
 }
-console.log(primes);
+console.log(primes2);
 
