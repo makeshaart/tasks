@@ -49,6 +49,18 @@
 // }
 // console.log(primes);
 
+// let n = prompt("Type number here", "");
+// for (let i = 2; i <= n; i++) {
+//     if ((n % i == 0) && (n != i)) {
+//         break;
+//     } else {
+//         console.log(n,'it`s a prime num')
+//         break;
+//     }
+// }
+
+
+
 
 //  let number = prompt("Type number here", "");
 //     if((number%2===0) || (number%3===0)|| (number%5===0)|| (number%7===0)){
