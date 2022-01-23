@@ -9,13 +9,12 @@ function getPr1(n){
         for (let j = 2; j <= i; j++) {
             // проверяем делится ли само на себя, только один раз 
             // исключаем дополнительные делители
-            if (i % j === 0) {
-                break;
-            }else{
-                primes.push(i);
-            }
+            if (i % j === 0) continue ;
         }
+        // те что подходят условию добавляем 
+        primes.push(i);
     }
+    // собираем массив
     return primes;
 }
 console.log(getPr1(10));
