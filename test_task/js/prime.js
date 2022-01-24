@@ -2,8 +2,11 @@
     //PRIME TASKS
 
 function showPr2(n){
+    if( n < 1 ){
+        return null;
+    }
     // создаем цикл
-    for (let i = 2; i <= n; i++) {
+    for (let i = 2; i < n; i++) {
         // проходим по проверяемому числу циклом , проверяем есть ли еще делитель
         // который при взятии остатка оставит 1
         if (n % i == 0 ) {
@@ -11,8 +14,8 @@ function showPr2(n){
         }
         // число удолетворяющее условию возвращаем, проверяя еще одно условие 
         // для простого числа 
-        return n > 1;
     }
+    return true;
 }
 console.log(showPr2(49));
     
@@ -29,7 +32,7 @@ function getPr1(n){
     }
     return primes;
 }
-console.log(getPr1(100));
+console.log(getPr1(55));
 
 
 
