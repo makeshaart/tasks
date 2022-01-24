@@ -1,7 +1,7 @@
 
     //PRIME TASKS
 
-function showPr2(n){
+function isPrime(n){
     if( n < 1 ){
         return null;
     }
@@ -17,28 +17,28 @@ function showPr2(n){
     }
     return true;
 }
-console.log(showPr2(49));
+console.log(isPrime(49));
     
 
-function getPr1(n){
+function getPrime(n){
     // создаем массив в который поместим простые числа
     const primes = [];
     // создаем двойной цикл, чтобы пройтись по все числам в заданом промежутке проверяя
     // условия простого числа
     for (let i = 2; i <= n; i++) {
-        if(showPr2(i)){
+        if(isPrime(i)){
             primes.push(i);
         }
     }
     return primes;
 }
-console.log(getPr1(55));
+console.log(getPrime(55));
 
 
 
 
 
-function getPr4(number){
+function getPrimeSeive(number){
     // создаем 2 массива: для простых чисел и для тех что не подходят
     const seive = [];
     const primes = [];
@@ -57,4 +57,4 @@ function getPr4(number){
     }
     return primes;
 }
-console.log(getPr4(55));
+console.log(getPrimeSeive(55));
